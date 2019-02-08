@@ -1,0 +1,123 @@
+---
+title: "Challenge 7"
+subtitle: "Out of an abundance of caution . . . "
+output:
+  html_document:
+    df_print: paged
+---
+# Abundance Plot Challenges
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, include=TRUE)
+```
+
+## Background
+The goal of these challenges are to give you experience with absolute abundance plots, as well as with several features of phyloseq. For several technical reasons, the absolute abundance of amplicon sequencing reads is not biologically meaningful.  However, review of absolute abundance is important for quality control.
+
+## Resources
+These challenges are based on the [phyloseq plot_bar tutorial](https://joey711.github.io/phyloseq/plot_bar-examples.html), which will give you starting points for most of the challenges.  
+
+## Data
+For all of these challenges you will be using a lemur data phyloseq RDS that is available at `/data/tutorial_data/challenge6_lemur_subset.rds`.
+
+# Challenge Chunks
+## Load Libraries
+```{r}
+
+```
+
+## Define Paths
+```{r}
+
+```
+
+## Check Phyloseq RDS
+Load your phyloseq RDS and `print` it just to be sure things look sane
+```{r}
+
+```
+
+## Basic Challenges
+### Simple absolute abundance plot
+Start by making a simple absolute abundance bar plot with samples on the x-axis and absolute abundance on the y-axis.  Here is an example from the phyloseq tutorial.
+![basic abundance plot](https://joey711.github.io/phyloseq/plot_bar-examples_files/figure-html/unnamed-chunk-3-1.png)
+```{r}
+
+```
+
+### Absolute abundance plot with kingdom
+Now let's look add the *Kingdom* distribution of the reads.  This is a good sanity check for contamination - we expect the *vast* majority of our reads to be bacterial.  There is an example from the phyloseq tutorial doing this at the *genus* level.
+![abundance plot with phylogeny](https://joey711.github.io/phyloseq/plot_bar-examples_files/figure-html/unnamed-chunk-4-1.png)
+```{r}
+
+```
+
+### Absolute abundance plot with phyllum
+Now do the same as above, but  coloring by *phyllum* instead of by *kingdom*.
+```{r}
+
+```
+
+## Intermediate Challenges
+### Facet Plots
+From our plots so far, we see some variation in number of reads per sample.  This is to be expected, but we want to be sure that there are no confounding issues, for example, categories of samples that are outliers.  To this end, we can make facet plots to group samples by different metadata features.  Try to remake the kingdom absolute abundance plot so that samples are grouped by ChowType, this will give us an idea if there is a correlation between chow type and abundance. This plot from the phyloseq tutorial should give you an idea of what you are aiming for:
+![abundance plot with phylogeny](https://joey711.github.io/phyloseq/plot_bar-examples_files/figure-html/unnamed-chunk-6-1.png)
+
+```{r}
+
+```
+
+Depending on how you do this, you might notice some weird things about your plot:
+1. The bars are all black, despite the fact that we trying to color by Kingdom
+2. There are spaces between samples
+
+The next challenge will address #1 and we will address #2 in the *Advanced Challeges* section
+
+### Getting rid of annoying black lines
+You may have noticed that the bars are divided by short horizontal black lines.  This is because each bar actually consists of a stack of sub-bars, each representing a different OTU.  I generally find the sub-bar delineation to be more confusing than helpful, so I prefer to get rid of it.  This isn't that hard to do!  by default `plot_bar` outlines each sub-bar in black, but if we outline sub-bars with the same color as the bar fill, we get rid of the delineation.  Try re-making the *Absolute abundance plot with kingdom* from above, but without the black sub-bar outlines.  The section [Add ggplot2 layer to remove the OTU separation lines](https://joey711.github.io/phyloseq/plot_bar-examples.html#add-ggplot2-layer-to-remove-the-otu-separation-lines) should help you do this
+
+```{r}
+
+```
+
+### Facet Plot without annoying black lines
+Now try to make the "ChowType" facet plot without the bar outlines.
+```{r}
+
+```
+
+## Advanced Challenges
+### Missing Values in Facet Plots
+By default, the facets of a facet plot use the same scale.  Often this is the right thing to do - if the y-axis of each of the abundance plots had a different scale, it would be hard to compare bars between the facets.  But sometimes it is not, such as our case.  For the ChowType facet plot, since the x-axis is samples, each sample has a place in each facet, even though ChowType is mutually exclusive - each sample corresponds to a lemur, and each lemur only gets one ChowType.  Try to fix the ChowType facet plot so that each facet only shows the samples that correspond to that ChowType.
+
+
+```{r}
+
+```
+
+Once you fix that, you will notice that we now have another problem: the facets default to being the same size, despite the number of bars in the facet.  Try adjusting the facet plot so the bars are all the same width, by making the size of the facet proportional to the number bars in it. Hint: check out the `space` argument to `facet_grid`
+
+```{r}
+
+```
+
+### Bonus: Abundance Plots without plot_bar
+`plot_bar` is pretty convenient, but sometimes you might want more control over plots.  One way is to add ggplot2 layers, as we did above, another is to bypass `plot_bar` and use ggplot2 directly.  Try making one of the above bar plots without `plot_bar`
+
+> Hint: you can see the code for an R function by calling the function without parentheses or arguments
+
+```{r check_plot_bar}
+# examining the plot_bar function shows you how it calls ggplot2
+plot_bar
+```
+
+```{r}
+
+```
+
+### Bonus: Get rid of Grid Background
+Make one of your plots from above less ugly by getting rid of the annoying grid background
+```{r}
+
+```
+
