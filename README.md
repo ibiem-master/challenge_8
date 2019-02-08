@@ -33,13 +33,11 @@ You will need to:
     instructions from Challenge
     1](https://github.com/IBIEM/challenge_1/blob/master/README.Rmd#submitting-the-assignment)
     ). You should submit the following:
-
--   `challenge6_assignment.Rmd` : your modified version of the R
-    Notebook that you received in your repo
--   `challenge6_assignment.html` : the output from knitting your revised
-    `challenge6_assignment.Rmd`
-
-1.  Optional (but *strongly* recommended): frequently commit changes and
+    -   `challenge7_assignment.Rmd` : your modified version of the R
+        Notebook that you received in your repo
+    -   `challenge7_assignment.html` : the output from knitting your
+        revised `challenge6_assignment.Rmd`
+5.  Optional (but *strongly* recommended): frequently commit changes and
     push to GitHub.
 
 We strongly recommend that you start working on this immediately so you

@@ -23,13 +23,13 @@ You will need to:
 3. Modify the header of [challenge7_assignment.Rmd](challenge7_assignment.Rmd) (you might want to review the [relevant instructions from Challenge 1](https://github.com/IBIEM/challenge_1/blob/master/README.Rmd#modify-the-header)
 
 4. Submit the Assignment (you might want to review the [relevant instructions from Challenge 1](https://github.com/IBIEM/challenge_1/blob/master/README.Rmd#submitting-the-assignment) ).  You should submit the following:
-  - `challenge6_assignment.Rmd` : your modified version of the R Notebook that you received in your repo
-  - `challenge6_assignment.html` : the output from knitting your revised `challenge6_assignment.Rmd`
+    - `challenge7_assignment.Rmd` : your modified version of the R Notebook that you received in your repo
+    - `challenge7_assignment.html` : the output from knitting your revised `challenge6_assignment.Rmd`
+
 
 5. Optional (but *strongly* recommended): frequently commit changes and push to GitHub.
 
 We strongly recommend that you start working on this immediately so you will have time to get any help that you need.  If you have questions about this assignment outside of class, please [post an Issue](https://github.com/IBIEM/community/issues) to the discussion forum.
-
 
 ## Grading
 For this assignment and future assignments we will be checking for:
