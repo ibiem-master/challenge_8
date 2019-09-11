@@ -1,15 +1,8 @@
----
-title: "Challenge 7: Out of an abundance of caution . . . "
-output:
-  md_document:
-  variant: markdown_github
----
-
-# Challenge 7: Out of an abundance of caution . . .
+# Challenge 8: Out of an abundance of caution . . .
 - *Assigned: February 8, 2019*
 - *Due: at 6pm on February 15, 2019*
 
-# Assignment
+## Assignment
 You should have received an email invitation to access this assigment in Github Classroom.  If you haven't received it, please [post an Issue](https://github.com/IBIEM/community/issues)
 
 The goal of this challenge is for you to begin working with phyloseq, and use phyloseq to start making some standard plots: Relative abundance plots and alpha diversity plots.
@@ -18,13 +11,13 @@ You will need to:
 
 1. Initialize a new project in RStudio based on this repository (you might want to review the [relevant instructions from Challenge 1](https://github.com/IBIEM/challenge_1/blob/master/README.Rmd#initialize-a-new-project))
 
-2. Fill the blank R code chunks in [challenge7_assignment.Rmd](challenge7_assignment.Rmd)
+2. Fill the blank R code chunks in [challenge8_assignment.Rmd](challenge8_assignment.Rmd)
 
-3. Modify the header of [challenge7_assignment.Rmd](challenge7_assignment.Rmd) (you might want to review the [relevant instructions from Challenge 1](https://github.com/IBIEM/challenge_1/blob/master/README.Rmd#modify-the-header)
+3. Modify the header of [challenge8_assignment.Rmd](challenge8_assignment.Rmd) (you might want to review the [relevant instructions from Challenge 1](https://github.com/IBIEM/challenge_1/blob/master/README.Rmd#modify-the-header)
 
 4. Submit the Assignment (you might want to review the [relevant instructions from Challenge 1](https://github.com/IBIEM/challenge_1/blob/master/README.Rmd#submitting-the-assignment) ).  You should submit the following:
-    - `challenge7_assignment.Rmd` : your modified version of the R Notebook that you received in your repo
-    - `challenge7_assignment.html` : the output from knitting your revised `challenge6_assignment.Rmd`
+    - `challenge8_assignment.Rmd` : your modified version of the R Notebook that you received in your repo
+    - `challenge8_assignment.html` : the output from knitting your revised `challenge6_assignment.Rmd`
 
 
 5. Optional (but *strongly* recommended): frequently commit changes and push to GitHub.
