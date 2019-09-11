@@ -17,7 +17,7 @@ You will need to:
 
 4. Submit the Assignment (you might want to review the [relevant instructions from Challenge 1](https://github.com/IBIEM/challenge_1/blob/master/README.Rmd#submitting-the-assignment) ).  You should submit the following:
     - `challenge8_assignment.Rmd` : your modified version of the R Notebook that you received in your repo
-    - `challenge8_assignment.html` : the output from knitting your revised `challenge6_assignment.Rmd`
+    - `challenge8_assignment.html` : the output from knitting your revised `challenge8_assignment.Rmd`
 
 
 5. Optional (but *strongly* recommended): frequently commit changes and push to GitHub.
