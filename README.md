@@ -1,11 +1,11 @@
 # Challenge 8: Out of an abundance of caution . . .
-- *Assigned: February 8, 2019*
-- *Due: at 6pm on February 15, 2019*
+- *Assigned: October 18, 2019*
+- *Due: at 6pm on Novermber 8, 2019*
 
 ## Assignment
 You should have received an email invitation to access this assigment in Github Classroom.  If you haven't received it, please [post an Issue](https://github.com/IBIEM/community/issues)
 
-The goal of this challenge is for you to begin working with phyloseq, and use phyloseq to start making some standard plots: Relative abundance plots and alpha diversity plots.
+The goal of this challenge is for you to begin working with phyloseq, and use phyloseq to start making some standard plots, specifically relative abundance plots.
 
 You will need to:
 
