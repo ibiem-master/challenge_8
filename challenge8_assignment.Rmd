@@ -1,11 +1,11 @@
 ---
-title: "Challenge 7"
+title: "Challenge 8"
 subtitle: "Out of an abundance of caution . . . "
 output:
   html_document:
     df_print: paged
 ---
-# Abundance Plot Challenges
+# Abundance Plot Challenge
 
 ```{r global_options, include=FALSE}
 knitr::opts_chunk$set(echo=TRUE, include=TRUE)
@@ -18,7 +18,17 @@ The goal of these challenges are to give you experience with absolute abundance 
 These challenges are based on the [phyloseq plot_bar tutorial](https://joey711.github.io/phyloseq/plot_bar-examples.html), which will give you starting points for most of the challenges.  
 
 ## Data
-For all of these challenges you will be using a lemur data phyloseq RDS that is available at `/data/tutorial_data/challenge6_lemur_subset.rds`.
+For all of these challenges you will be using a lemur data phyloseq RDS that is available at `/data/tutorial_data/lemur_subset_phyloseq.rds`.
+
+## Completing and Submitting
+You must fill in the chunks below as indicated, but you are free to add other chunks too.  To submit this assignment for full credit you should *commit* and *push*:
+
+1. This file (`challenge8_assignment.Rmd`)
+2. The knited version of this file (`challenge8_assignment.html`)
+
+These are the *ONLY* files you should include in your repo.  I strongly recommend that you make a `scratch` subdirectory in your home directory, then make subdirectories for each project in scratch, for example `~/scratch/challenge8`.  If you don't follow this advice, but instead put temporary files in your repo directory, you *must* be sure not to commit them to your repo, you will lose points if you do.
+
+
 
 # Challenge Chunks
 ## Load Libraries
@@ -74,7 +84,7 @@ Depending on how you do this, you might notice some weird things about your plot
 The next challenge will address #1 and we will address #2 in the *Advanced Challeges* section
 
 ### Getting rid of annoying black lines
-You may have noticed that the bars are divided by short horizontal black lines.  This is because each bar actually consists of a stack of sub-bars, each representing a different OTU.  I generally find the sub-bar delineation to be more confusing than helpful, so I prefer to get rid of it.  This isn't that hard to do!  by default `plot_bar` outlines each sub-bar in black, but if we outline sub-bars with the same color as the bar fill, we get rid of the delineation.  Try re-making the *Absolute abundance plot with kingdom* from above, but without the black sub-bar outlines.  The section [Add ggplot2 layer to remove the OTU separation lines](https://joey711.github.io/phyloseq/plot_bar-examples.html#add-ggplot2-layer-to-remove-the-otu-separation-lines) should help you do this
+You may have noticed that the bars are divided by short horizontal black lines.  This is because each bar actually consists of a stack of sub-bars, each representing a different OTU.  I generally find the sub-bar delineation to be more confusing than helpful, so I prefer to get rid of it.  By default `plot_bar` outlines each sub-bar in black, but if we outline sub-bars with the same color as the bar fill, we get rid of the delineation.  Try re-making the *Absolute abundance plot with kingdom* from above, but without the black sub-bar outlines.  The section [Add ggplot2 layer to remove the OTU separation lines](https://joey711.github.io/phyloseq/plot_bar-examples.html#add-ggplot2-layer-to-remove-the-otu-separation-lines) should help you do this
 
 ```{r}
 
@@ -117,6 +127,13 @@ plot_bar
 
 ### Bonus: Get rid of Grid Background
 Make one of your plots from above less ugly by getting rid of the annoying grid background
+```{r}
+
+```
+
+
+# Session Info
+Always print `sessionInfo` for reproducibility!
 ```{r}
 
 ```
