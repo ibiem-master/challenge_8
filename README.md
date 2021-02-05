@@ -1,6 +1,6 @@
 # Challenge 8: Out of an abundance of caution . . .
-- *Assigned: October 18, 2019*
-- *Due: at 6pm on Novermber 8, 2019*
+- *Assigned: February 5, 2021*
+- *Due: at 6pm on February 26, 2021*
 
 ## Assignment
 You should have received an email invitation to access this assigment in Github Classroom.  If you haven't received it, please [post an Issue](https://github.com/IBIEM/community/issues)
